@@ -148,6 +148,24 @@ def test_count_sines_from():
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
+    # Test 4:
+    expected = 1
+    answer = count_sines_from(9, 9)
+    print('Test 4 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 5:
+    expected = 4
+    answer = count_sines_from(3, 6)
+    print('Test 5 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 6:
+    expected = 0
+    answer = count_sines_from(7, 9)
+    print('Test 6 expected:', expected)
+    print('       actual:  ', answer)
+
     # ------------------------------------------------------------------
     # TO DO: 4 (continued).
     # Below this comment, add 5 more test cases of your own choosing.

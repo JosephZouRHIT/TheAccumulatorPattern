@@ -101,8 +101,7 @@ def draw_parallel_lines(n, point, length, window):
         point2 = rg.Point(point.x + length, point.y + 30 * k)
         line = rg.Line(point1, point2)
         line.attach_to(window)
-        window.render()
-    window.close_on_mouse_click()
+    window.render()
     # ------------------------------------------------------------------
     # Done: 2. Implement and test this function.
     #          Tests have been written for you (above).
@@ -169,12 +168,11 @@ def draw_lines(n, point, window):
       :type window: rg.RoseWindow
     """
     constant = 200 / n
-    for k in range(n):
-        point2 = rg.Point(point.x + 100, point.y - 100 + constant)
+    for _ in range(n):
+        point2 = rg.Point(point.x + 100, point.y - 100 + constant * _)
         line = rg.Line(point, point2)
         line.attach_to(window)
-        window.render()
-    window.close_on_mouse_click()
+    window.render()
 
     # ------------------------------------------------------------------
     # Done: 3. Implement and test this function.
